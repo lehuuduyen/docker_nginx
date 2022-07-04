@@ -15,8 +15,10 @@ services:
       context: ./
     volumes:
         - ./code:/code
+        - ./php:/usr/local/etc/php
     networks:
       - my-network-nginx
+      
 
   nginx:
     image: nginx:latest
